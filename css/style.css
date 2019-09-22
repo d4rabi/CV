@@ -1,0 +1,338 @@
+*{
+    font-family: Roboto, sans-serif;
+    font-size: 2.5vw;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: grey;
+}
+
+body {
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    color: azure !important;
+}
+a:active{
+    color: white;
+}
+
+#bg{
+    width: 22%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.section{
+    padding: 2em 2em 2em 2em;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 1em;
+    position: relative;
+}
+.section>.container{
+    position: absolute;
+    background-color: whitesmoke;
+    top:0;
+    bottom:0;
+    left:0;  
+    width:100%;
+    opacity: 0.35;
+}
+.section *{
+    position: relative;
+}
+.section>h1{
+    font-size: 1.25em;
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 1em;
+    font-variant: small-caps;
+}
+
+.circle{
+    background-color: white;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    top: 1em;
+}
+
+.gone{
+    visibility: hidden;
+}
+
+/* navbar */
+#navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2em;
+    font-variant: small-caps;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+#navbar>ul{
+    margin-top: 0.25em;
+    list-style: none;
+    text-align: center;
+}
+#navbar>ul>li{
+    margin-right: 2em;
+    display: inline;
+}
+#navbar>ul>li>a{
+    font-size: 0.75em;
+    color: #181d21;
+}
+.sticky-nav{
+    position: fixed !important;
+    background-color: #181d21 !important;
+    transition-delay: 0.1s;
+}
+.sticky-nav>ul>li>a{
+    color: whitesmoke !important;
+}
+.sticky-nav>ul>li>a:hover{
+    color: #181d21 !important;
+    background-color: whitesmoke !important;
+}
+
+/* aboutme */
+#aboutme{
+    background-image: url(../img/about.jpg);
+    background-size: 120%;
+    background-position-y: -4em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: inherit;
+    height: 18.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    top: 0;
+    margin-top: 0;
+}
+#aboutme img{
+    width: 8em;
+}
+#aboutme h2{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    color: #181d21;
+}
+#aboutme p{
+    font-size: 1em;
+}
+#aboutme>div{
+    padding-left: 2em;
+    padding-right: 10em;
+}
+
+/* formal-education */
+#formal-education h2{
+    color: #181d21;
+}
+#formal-education>.line{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 5em;
+    bottom: 1em;
+    left: 50%;
+    z-index: 1;
+    width: 0.2em;
+}
+#formal-education .circle{
+    background-color: #181d21;
+}
+#formal-education>.container{
+    background-image: url(../img/bg-f-education.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#formal-education>.timeline{
+    padding: 0;
+}
+#formal-education>.timeline>.content{
+    width: 50%;
+    text-align: center;
+    display: flex;
+}
+#formal-education h2{
+    margin: 0 0.75em 0 0.75em;
+    font-size: 1em;
+}
+#formal-education>.timeline>.content>.text{
+    width: 13em;
+}
+#formal-education>.odd>.content{
+    margin-right: auto;
+}
+#formal-education>.even>.content{
+    margin-left: auto;
+}
+#formal-education>.even>.content .circle{
+    margin-left: 2em;
+}
+
+/* experience */
+#experience>.line{
+    background-color: white;
+    position: absolute;
+    top: 5em;
+    bottom: 1em;
+    left: 50%;
+    z-index: 1;
+    width: 0.2em;
+}
+#experience>.timeline{
+    padding: 0;
+}
+#experience>.timeline>.content{
+    width: 50%;
+    text-align: center;
+    display: flex;
+}
+#experience h2{
+    margin: 0 0.5em 0 0.5em;
+    font-size: 0.6em;
+}
+#experience p{
+    font-size: 0.5em;
+    color: #181d21;
+}
+#experience img{
+    margin-top: 2.5em;
+    width: 5em;
+}
+#experience>.timeline>.content>.text{
+    width: 8.5em;
+}
+#experience>.odd>.content{
+    margin-right: auto;
+}
+#experience>.odd>.content p{
+    text-align: right;
+}
+#experience>.even>.content{
+    margin-left: auto;
+}
+#experience>.even>.content p{
+    text-align: left;
+    margin-left: 1em;
+}
+#experience>.even>.content .circle{
+    margin-left: 1.5em;
+}
+
+/* contact */
+#contact h2{
+    text-align: center;
+    font-size: 1em;
+}
+#contact>.gambar{
+    text-align: center;
+}
+#contact img{
+    width: 2em;
+    height: 2em;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    opacity: 0.7;
+}
+
+#contact a>img:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* footer */
+#footer{
+    background-color: #181d21;
+    text-align: center;
+    font-size: 0.5em;
+    bottom: 0;
+}
+#footer>a{
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 425px){
+    *{
+        font-size: 3.5vw;
+    }
+    #bg{
+        width: 50%;
+    }
+
+    /* aboutme */
+    #aboutme h2{
+        font-size: 1em;
+    }
+    #aboutme p{
+        font-size: 0.75em;
+    }
+    #aboutme{
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 14em;
+    }
+
+    /* formal-education */
+    #formal-education h2{
+        font-size: 0.75em;
+    }
+    #formal-education>.timeline>.content>.text{
+        width: 8em;
+    }
+    #formal-education>.even>.content .circle{
+        margin-left: 2em;
+    }
+
+    /* experience */
+    #experience h2{
+        font-size: 0.7em;
+    }
+    #experience p{
+        visibility: hidden;
+        position: absolute;
+    }
+    #experience img{
+        width: 3em;
+    }
+    #experience>.timeline>.content>.text{
+        width: 7em;
+    }
+    #experience>.odd>.content p{
+        margin-right: -0.5em;
+    }
+    #experience>.even>.content p{
+        margin-left: 1em;
+    }
+    #experience>.even>.content .circle{
+        margin-left: 0.5em;
+    }
+
+    /* contact */
+    #contact img{
+        width: 1.5em;
+        height: 1.5em;
+        opacity: 1;
+    }
+}
